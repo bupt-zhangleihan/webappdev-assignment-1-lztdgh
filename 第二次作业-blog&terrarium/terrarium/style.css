@@ -1,0 +1,199 @@
+.page {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 70px 70px  70px;
+	grid-template-rows: 70px 70px  70px 70px;
+	gap: 0px 0px;
+	grid-template-areas:
+		". cup ."
+		"left1 bottleBody  right1"
+		"left2 bottleBody  right2"
+		"left3 bottleBody  right3"
+		"left4 bottleBody  right4"
+		"left5 bottleBody  right5"
+		"left6 bottleBody  right6"
+		"left7 dirt  right7"
+		"left8 jarBottom  right8";
+	grid-template-rows: 20px;
+	grid-template-columns: 300px 600px 300px;
+	
+}
+
+.page item {
+	outline: 1px dotted;
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+}
+
+.left1 {
+	grid-area: left1;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+}
+
+.left2 {
+	grid-area: left2;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+}
+
+.left3 {
+	grid-area: left3;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+}
+
+.left4 {
+	grid-area: left4;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+}
+
+.left5 {
+	grid-area: left5;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+}
+
+.left6 {
+	grid-area: left6;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+}
+
+.left7 {
+	grid-area: left7;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+}
+
+.left8 {
+	grid-area: left8;
+	text-align: left;
+	grid-column-start: 2;
+	grid-column-end: 2;	
+}
+
+#bottleBody {
+	grid-area: bottleBody;
+	grid-row-start: 2;
+	grid-row-end: span 7
+}
+
+#dirt {
+	grid-area: dirt;
+	grid-row-start: 7;
+	grid-row-end: 9
+}
+
+.right1 {
+	grid-area: right1;
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 2;;
+	
+
+}
+
+.right2 {
+	grid-area: right2;
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 2;;
+}
+
+.right3 {
+	grid-area: right3;
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 2;;
+}
+
+.right4 {
+	grid-area: right4;
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 2;;
+}
+
+.right5 {
+	grid-area: right5;
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 2;;
+}
+
+.right6 {
+	grid-area: right6;
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 2;;
+}
+
+.right7 {
+	grid-area: right7;
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 2;;
+}
+
+.right8 {
+	grid-area: right8;
+	text-align: right;
+	grid-column-start: 2;
+	grid-column-end: 2;;
+}
+
+.jarBottom {
+	grid-area: jarBottom;
+	bottom: 85%;
+}
+
+.plant {
+	max-width: 50%;
+	max-height: 50%;
+	z-index: 1;
+}
+
+.cup {
+	grid-area: cup;
+	background: #68a7a0;
+	width: 35%;
+	bottom: 80.5%;
+	left: 35%;
+	opacity: 0.7;
+	z-index: 1;
+	margin: 0 auto;
+}
+
+.bottleBody {
+	background: #0a564d;
+	border-radius: 10%;
+	bottom: 0.5%;
+	opacity: 0.5;
+	z-index: 0;
+}
+
+.dirt {
+	background: #9a3a1d;
+	border-radius: 0 0 4rem 4rem;
+	bottom: 0%;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.jarBottom {
+	background: #0ae0c7;
+	opacity: 0.7;
+	grid-row-start: 8;
+	grid-row-end: 10;
+	z-index: 9999;
+}
