@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 结构 实例化选型</title>
+</head>
+
+<body>
+    <h1 id="byId">这个是H1标签</h1>
+    <!--  -->
+    <!-- h1 -->
+    <h1>1. 什么是Dom</h1>
+    <h2>1.1 Dom 的定义</h2>
+    <p> 文档对象模型（DOM）是 web 上构成文档结构和内容的对象的数据表示。</p>    
+    <h2>1.2 我对Dom结构的理解</h2>
+    <p>自上而下，以金字塔模式形成的树状结构，以HTML标签为节点。基于Java Script 对当前的节点进行控制。基于Js方法中的描述，可以通过id来绑定对应的节点，获取其Dom结构对象，进行各种操作，改变样式、内容。</p>     
+    <h2>1.3 Dom接口方法</h2>
+    <p>接口分成两类，第一类为只读。（不可进行操作，仅包含返回值），另一种为可通过js方法获取到该Dom。形成一个参数（网站上为Dom对象）。可以控制该参数进行编辑</p>
+    <hr>
+    <h1>2.编写案例：</h1>
+    <h2>改变标题</h2>
+    <button onclick="changeColor('blue');">标题变为蓝色</button>
+    <button onclick="changeColor('red');">标题变为红色</button>
+    <input id="name" type="text" value="lll"/> 
+    <button  onclick="cleanText()">清除</button>
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+    //1.获取button
+    function changeColor(newColor) {
+        var elem = document.getElementById("byId");
+        elem.style.color = newColor;
+    }
+
+    function cleanText(){
+        var domInput = document.getElementById("name");
+        domInput.value = "";
+    }
+
+</script>
